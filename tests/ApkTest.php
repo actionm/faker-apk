@@ -23,12 +23,12 @@ class ApkTest extends TestCase
 
     public function testApkPackageName()
     {
-         $this->assertRegExp('#[a-z]{2,255}(\.[a-z]{2,255}){1,4}#', $this->faker->ApkPackageName());
+        $this->assertRegExp('#[a-z]{2,255}(\.[a-z]{2,255}){1,4}#', $this->faker->ApkPackageName());
     }
 
     public function testApkVersionCode()
     {
-        $this->assertRegExp('#[0-9]{2,10}#', (string) $this->faker->ApkVersionCode());
+        $this->assertRegExp('#[0-9]{2,10}#', (string)$this->faker->ApkVersionCode());
     }
 
 
@@ -44,22 +44,22 @@ class ApkTest extends TestCase
 
     public function testApkCompileSdkVersion()
     {
-        $this->assertRegExp('#[0-9]{1,2}#', (string) $this->faker->ApkCompileSdkVersion());
+        $this->assertRegExp('#[0-9]{1,2}#', (string)$this->faker->ApkCompileSdkVersion());
     }
 
     public function testApkCompileSdkVersionCodename()
     {
-        $this->assertRegExp('#[0-9]{1}#', (string) $this->faker->ApkCompileSdkVersionCodename());
+        $this->assertRegExp('#[0-9]{1}#', (string)$this->faker->ApkCompileSdkVersionCodename());
     }
 
     public function testApkSdkVersion()
     {
-        $this->assertRegExp('#[0-9]{1,2}#', (string) $this->faker->ApkSdkVersion());
+        $this->assertRegExp('#[0-9]{1,2}#', (string)$this->faker->ApkSdkVersion());
     }
 
     public function testApkTargetSdkVersion()
     {
-        $this->assertRegExp('#[0-9]{1,2}#', (string) $this->faker->ApkTargetSdkVersion());
+        $this->assertRegExp('#[0-9]{1,2}#', (string)$this->faker->ApkTargetSdkVersion());
     }
 
     public function testApkLaunchableActivity()
@@ -119,8 +119,8 @@ class ApkTest extends TestCase
         $this->assertRegExp('#[A-z]{1,255}\.apk#', $this->faker->ApkFilename());
     }
 
-    public function testApkGenerateFakeAAPT() {
-        die($this->faker->ApkGenerateFakeAAPT);
+    public function testApkGenerateFakeAAPT()
+    {
         $this->isTrue($this->faker->ApkGenerateFakeAAPT());
     }
 }
