@@ -10,7 +10,7 @@ fake APK package info fields which generate [AAPT or AAPT2](https://developer.an
 ```
                                                  
 
-[![Build Status](https://travis-ci.org/aalaap/faker-youtube.svg?branch=master)](https://travis-ci.org/aalaap/faker-youtube)
+[![Build Status](https://travis-ci.org/actionm/faker-apk.svg?branch=master)](https://travis-ci.org/actionm/faker-apk)
 
 ## Install
 
